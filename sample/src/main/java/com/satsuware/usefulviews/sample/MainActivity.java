@@ -17,11 +17,12 @@
 package com.satsuware.usefulviews.sample;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.satsuware.usefulviews.LabelledSpinner;
 
@@ -45,10 +46,8 @@ public class MainActivity extends AppCompatActivity implements LabelledSpinner.O
     @Override
     public void onItemChosen(View labelledSpinner, AdapterView<?> adapterView, View itemView, int position, long id) {
         String selectedText = adapterView.getItemAtPosition(position).toString();
-        switch (labelledSpinner.getId()) {
-            case R.id.spinner_planets:
-                Toast.makeText(MainActivity.this, "Selected: " + selectedText, Toast.LENGTH_SHORT).show();
-                break;
+        if (labelledSpinner.getId() == R.id.spinner_planets) {
+            Toast.makeText(MainActivity.this, "Selected: " + selectedText, Toast.LENGTH_SHORT).show();
             // If you have multiple LabelledSpinners, you can add more cases here
         }
     }

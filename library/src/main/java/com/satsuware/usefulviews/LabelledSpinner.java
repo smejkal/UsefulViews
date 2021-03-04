@@ -20,11 +20,6 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Build;
-import android.support.annotation.ArrayRes;
-import android.support.annotation.ColorRes;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.StringRes;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +30,12 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
+
+import androidx.annotation.ArrayRes;
+import androidx.annotation.ColorRes;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 
 import java.util.List;
 
