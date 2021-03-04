@@ -17,13 +17,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion BUILD_COMPILE_SDK
+    buildToolsVersion VERSION_BUILD_TOOLS
 
     defaultConfig {
         applicationId "com.satsuware.usefulviews.sample"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion BUILD_TARGET_SDK
         versionCode 1
         versionName "1.0"
     }
